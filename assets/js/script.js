@@ -161,7 +161,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 function validate(){
   var userName=document.getElementById("username");
-  var email=document.getElementById("email");
 
   if(userName.value==""){
     alert("Please Enter your name...!")
