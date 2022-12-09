@@ -157,12 +157,21 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+// name check
+function checkName(){
+  let s=document.getElementById("username").value.trim();
+  if (s=="") {
+  document.getElementById("username").placeholder="...please enter name...";
+  document.form1.fullname.focus();
+  }
+}
 
+// msg check
 
-function validate(){
-  var userName=document.getElementById("username");
-
-  if(userName.value==""){
-    alert("Please Enter your name...!")
+function checkMsg(){
+  let s=document.getElementById("msg").value.trim();
+  if (s=="") {
+  document.getElementById("msg").placeholder="...please enter message...";
+  document.form1.message.focus();
   }
 }
