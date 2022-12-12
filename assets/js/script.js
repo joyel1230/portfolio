@@ -158,20 +158,20 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 // name check
-function checkName(){
-  let s=document.getElementById("username").value.trim();
+function check(the){
+  let s=the.value.trim();
   if (s=="") {
-  document.getElementById("username").placeholder="...please enter name...";
-  document.form1.fullname.focus();
+  the.placeholder="...please fill this field...";
+  the.focus();
   }
 }
 
 // msg check
 
-function checkMsg(){
-  let s=document.getElementById("msg").value.trim();
-  if (s=="") {
-  document.getElementById("msg").placeholder="...please enter message...";
-  document.form1.message.focus();
-  }
-}
+// function checkMsg(){
+//   let s=document.getElementById("msg").value.trim();
+//   if (s=="") {
+//   document.getElementById("msg").placeholder="...please enter message...";
+//   document.form1.message.focus();
+//   }
+// }
