@@ -1267,12 +1267,12 @@
           <form action="" name="form1" class="form" id="submit-form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" onblur="check(this)" class="form-input" placeholder="Full name" id="username" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" id="email" required data-form-input>
+              <input type="text" name="fullname" onblur="check(this)" class="form-input" placeholder="Full name" id="username"  data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" id="email"  data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" id="msg" onblur="check(this)" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit"  data-form-btn>
+            <textarea name="message" class="form-input" id="msg" onblur="check(this)" placeholder="Your Message"  data-form-input></textarea>
+            <button class="form-btn" type="submit" onclick="return onbtn()" id="btnid" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
